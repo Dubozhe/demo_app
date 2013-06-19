@@ -23,6 +23,9 @@ GEM
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
     activerecord-jdbc-adapter (1.2.9)
+    activerecord-jdbcpostgresql-adapter (1.2.9)
+      activerecord-jdbc-adapter (~> 1.2.9)
+      jdbc-postgres (>= 9.1, < 9.3)
     activerecord-jdbcsqlite3-adapter (1.2.9)
       activerecord-jdbc-adapter (~> 1.2.9)
       jdbc-sqlite3 (~> 3.7.2)
@@ -47,6 +50,7 @@ GEM
       multi_json (~> 1.0)
     hike (1.2.3)
     i18n (0.6.1)
+    jdbc-postgres (9.2.1002.1)
     jdbc-sqlite3 (3.7.2.1)
     journey (1.0.4)
     jquery-rails (3.0.1)
@@ -54,6 +58,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jruby-openssl (0.8.8)
       bouncy-castle-java (>= 1.5.0147)
+    json (1.8.0)
     json (1.8.0-java)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -113,6 +118,7 @@ PLATFORMS
   java
 
 DEPENDENCIES
+  activerecord-jdbcpostgresql-adapter
   activerecord-jdbcsqlite3-adapter
   coffee-rails (~> 3.2.1)
   jquery-rails
